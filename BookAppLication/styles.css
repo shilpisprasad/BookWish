@@ -1,0 +1,186 @@
+.Library{
+	height: 50px;
+	background-color: cadetblue;
+	color: beige;
+	text-align: center;
+	line-height: 50px;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+
+table   {
+	border-collapse: collapse;
+	width: 80%;
+	margin-top: 40px;
+	margin-left: 10%;
+	}
+
+th, td {
+	border: 1px solid #ddd;
+	padding: 10px;
+	text-align: center;
+	}
+
+th      {
+	background-color: #3498db;
+	color: #fff;
+	}
+.search-bar {
+    text-align: center;
+    margin-top: 20px;
+}
+#search_input {
+	padding: 8px;
+	width: 200px;
+	}
+
+#search_button {
+	padding: 13px;
+	border: none;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 35px; /* Set the width of the button */
+	height: 35px;
+	cursor: pointer;
+	background-image: url('https://cdn.icon-icons.com/icons2/849/PNG/512/search_locate_find_icon-icons.com_67287.png');
+	}
+
+.Add{
+	text-align: right;
+	line-height: 5px;
+	border: 1px solid cadetblue;
+	border-radius: 10px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left;
+	width: 110px; /* Set the width of the button */
+	height: 35px; /* Set the height of the button */
+	margin-top: 10px;
+	margin-left: 10%;
+	background-color: cadetblue;
+	color: beige;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+	cursor: pointer;
+	background-image: url('https://cdn.icon-icons.com/icons2/3641/PNG/512/add_white_button_icon_227863.png');
+	}
+.Add_Book {
+	width: 100px;
+	height: 35px;
+	margin-top: 10px;
+	margin-left: 10%;
+	text-align: right;
+	/* line-height: 5px; */
+	border: none;
+	border-radius: 10px;
+	background-color: cadetblue;
+	color: beige;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	cursor: pointer;
+	background-image: url('https://cdn.icon-icons.com/icons2/3641/PNG/512/add_white_button_icon_227863.png');
+	background-size: 26%;
+	background-repeat: no-repeat;
+	background-position: left;
+	}
+  
+.Add_Book:hover{
+	background-color: rgb(71, 118, 120);
+	}
+.select{
+	text-align: right;
+	line-height: 5px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left;
+	width: 110px; /* Set the width of the button */
+	height: 35px; /* Set the height of the button */
+	margin-top: 10px;
+	margin-left: 6%;
+	background-color: rgb(53, 39, 53);
+	color:#ddd;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+	cursor: pointer;
+	background-image: url('https://cdn.icon-icons.com/icons2/3641/PNG/512/add_white_button_icon_227863.png');
+	}
+.edit-btn {
+	padding: 10px;
+	text-decoration: none;
+	color: #fff;
+	border: none;
+	display: inline-block;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: rgb(216, 228, 49);
+	width: 69px;
+        height: 12px;
+	cursor: pointer;
+	background-image: url('https://cdn.icon-icons.com/icons2/2622/PNG/512/gui_user_edit_icon_158355.png'); /* Set the image for the Edit button */
+	}
+.delete-btn {
+	padding: 10px;
+	border: none;
+	display: inline-block;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 88px;
+        height: 28px;
+	cursor: pointer;
+	background-image: url('https://thumbs.dreamstime.com/b/vector-illustration-button-text-delete-red-color-delete-button-red-color-button-delete-264514179.jpg');
+	}
+.delete-btn:hover,  #search-button:hover {
+	opacity: 0.7; 
+	}
+.edit-btn:hover{
+	background-color: rgb(145, 145, 38);
+	}
+      
+#container {
+	    display: inline-block;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+             display: flex;
+            align-items: center; 
+            justify-content: center;
+            height: 100vh;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 400px;
+           }
+
+ #add_form {
+            padding: 20px;
+            box-sizing: border-box;
+           }
+
+ #bookName, #authorName, #serialNumber{
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+.back, .save{
+            width: 45%;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 7px;
+        }
+
+        .back:hover, .save:hover {
+            background-color: #47864a;
+        }

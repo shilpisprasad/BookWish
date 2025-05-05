@@ -1,0 +1,43 @@
+<?php
+class ctemplate
+    {
+    public $tarr;
+    function drawsect($section, $nv= array())
+	{
+	return 0;
+	}
+
+    function getdata($name)
+	{
+	if(file_exists($name))
+	    {
+	    $key= "";
+	    $fp = fopen($name, "r");
+	    while($line= fgets($fp))
+		{
+		if(preg_match('/^[*.]$/', $line))
+		    {
+		    $key= $line.str_replace("[", "").str_replace("]");
+		    }
+		else if(strlen($key) > 0)
+		    {
+		    $this->tarr[$key]= $this->tarr[$key] . $line;
+		    }
+		else
+		    {};
+		};
+	    fclose($fp);
+	    debug($this->tarr, "TARR");
+	    }
+	else
+	    {
+	    };
+	return 0;
+	}
+
+    function __construct($name= "home.tpl")
+	{
+	$this->getdata($name);
+	}
+    }
+?>
